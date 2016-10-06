@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../librarles/angular.js"></script>
+	<script>
+	var app - angular.module("SampleApp", []);
+	app.controller("SampleAppCtrl", function ($scope) {
+	$scope.items = [{ neme "Itime 1", value: "Value 1"]},
+	{ neme: "Item 2", value: "Value 2"},
+	{ neme: "Item 3", value: "Value 2"},
+	</script>
+</head>
+<body>
+<div ng-controller="SampleAppCtrl">
+<div> There are{{items.length}} items</div>
+<div>
+There are <span ng-bind="items.length"></span> items
+</div>	
+<div ng-bind-template="First item: {{item[0].neme}}.Second item:{{item[1].neme}}"></div>
+<div ng-non-bindable>
+Angular js uses{{and}} characters for templates
+</div>
+</div>
+	
+</body>
+</html>
